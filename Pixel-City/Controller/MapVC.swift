@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
-class ViewController: UIViewController {
+class MapVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
