@@ -39,5 +39,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>this app requires your location to pull photos from flicker</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>this app requires your location to pull photos from flicker</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>this app requires your location to pull photos from flicker</string>
 </dict>
 </plist>

@@ -13,6 +13,7 @@
 		6F3790A61F4DA51400EE2F2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3790A41F4DA51400EE2F2D /* Main.storyboard */; };
 		6F3790A81F4DA51400EE2F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F3790A71F4DA51400EE2F2D /* Assets.xcassets */; };
 		6F3790AB1F4DA51400EE2F2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3790A91F4DA51400EE2F2D /* LaunchScreen.storyboard */; };
+		6FAC17FC1F4EA75D00FEBC0F /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC17FB1F4EA75D00FEBC0F /* DroppablePin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		6F3790A71F4DA51400EE2F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F3790AA1F4DA51400EE2F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F3790AC1F4DA51400EE2F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FAC17FB1F4EA75D00FEBC0F /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		F0F54674262F8DC8D38F0A80 /* Pods-Pixel-City.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixel-City.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pixel-City/Pods-Pixel-City.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 		6F3790B31F4DA52A00EE2F2D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				6FAC17FB1F4EA75D00FEBC0F /* DroppablePin.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F3790A31F4DA51400EE2F2D /* MapVC.swift in Sources */,
+				6FAC17FC1F4EA75D00FEBC0F /* DroppablePin.swift in Sources */,
 				6F3790A11F4DA51400EE2F2D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
