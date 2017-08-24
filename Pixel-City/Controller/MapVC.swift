@@ -41,6 +41,7 @@ class MapVC: UIViewController , UIGestureRecognizerDelegate{
         collectionView?.delegate = self
         collectionView?.dataSource = self
         pullUpView.addSubview(collectionView!)
+        registerForPreviewing(with: self, sourceView: collectionView!) // for 3d touch
     }
 
     func addDoubleTap() {
@@ -271,3 +272,20 @@ extension MapVC : UICollectionViewDelegate,UICollectionViewDataSource {
         present(popVC, animated: true, completion: nil )
     }
 }
+
+extension MapVC : UIViewControllerPreviewingDelegate {
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        guard let indexPath = collectionView?.indexPathForItem(at: location) , let cell = collectionView?.cellForItem(at: indexPath) else {return nil}
+        guard let popVC = storyboard?.instantiateViewController(withIdentifier: "PopVC") as? PopVC else {return nil}
+        popVC.initData(forImage: imageArray[indexPath.row])
+        previewingContext.sourceRect = cell.contentView.frame
+        return popVC
+    }
+    
+    // forcepress
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        show(viewControllerToCommit, sender: self)
+    }
+}
+
